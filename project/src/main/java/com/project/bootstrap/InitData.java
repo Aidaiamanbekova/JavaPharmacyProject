@@ -29,7 +29,7 @@ public class InitData implements CommandLineRunner {
         List<Pharmacy> pharmacies = new ArrayList<>();
         Random random = new Random();
 
-        for (int i = 0; i < 3; i++) { // Create 3 publishers
+        for (int i = 0; i < 3; i++) {
             Pharmacy pharmacy = Pharmacy.builder()
                     .name("Pharmacy " + (i + 1))
                     .address("Address " + (i + 1))
@@ -37,7 +37,7 @@ public class InitData implements CommandLineRunner {
                     .build();
 
             List<Medicine> medicines = new ArrayList<>();
-            for (int j = 0; j < random.nextInt(3) + 2; j++) { // Create at least 2 books for each publisher
+            for (int j = 0; j < random.nextInt(3) + 2; j++) {
                 Medicine medicine = Medicine.builder()
                         .name("Medicine " + (j + 1))
                         .pharmacy(pharmacy)
