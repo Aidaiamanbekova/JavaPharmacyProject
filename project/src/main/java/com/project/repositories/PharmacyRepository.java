@@ -5,5 +5,5 @@ import com.project.entities.Pharmacy;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PharmacyRepository extends JpaRepository<Pharmacy, Long> {
+public interface PharmacyRepository extends JpaRepository<Pharmacy, String> {
 }
