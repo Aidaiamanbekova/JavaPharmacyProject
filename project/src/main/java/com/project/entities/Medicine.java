@@ -11,6 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
+@Table(name="medicine")
 
 public class Medicine {
 

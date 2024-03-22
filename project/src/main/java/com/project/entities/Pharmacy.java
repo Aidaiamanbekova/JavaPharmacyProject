@@ -12,7 +12,7 @@ import lombok.*;
 @Getter
 @Setter
 @Entity
-
+@Table(name="pharmacy")
 public class Pharmacy {
 
     @Id
